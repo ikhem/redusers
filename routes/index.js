@@ -6,4 +6,10 @@ router.get('/', ctrlUser.searchUsers);
 
 router.post('/user/search', ctrlUser.findUsers);
 
+router.post('/user/add', ctrlUser.processUser);
+
+router.get('/user/add', ctrlUser.addUser);
+
+router.delete('/user/delete/:id', ctrlUser.deleteUser);
+
 module.exports = router;
